@@ -6,9 +6,9 @@
       class="absolute -z-10 opacity-35"
     />
 
-    <header class="flex justify-between">
+    <header class="flex justify-between p-16">
       <img src="@/assets/images/vtg-logo.png" alt="vtg musli logo" />
-      <div>
+      <div class="flex gap-4">
         <a href="">Angebot</a>
         <a href="">Finanzierung & Garantie</a>
         <a href="">Über Uns</a>
@@ -16,83 +16,89 @@
         <a href="">Bewertung</a>
       </div>
     </header>
-    <div class="mx-10">
+
+    <div class="mx-16">
       <h1>Automobile</h1>
-      <h2>Entspannt unterwegs:<br />Qualität für sichere Fahrten!</h2>
-      <div>
+      <h2 class="mt-10">
+        Entspannt unterwegs:<br />Qualität für sichere Fahrten!
+      </h2>
+      <div class="mt-40">
         <p>Unsere Fahrzeuge:</p>
         <p><a href="">mobile<span>.</span>de</a></p>
       </div>
     </div>
   </div>
 
-  <div id="angebot-page" class="grid grid-cols-2 gap-y-4 gap-x-8">
-    <div>
-      <div>icon</div>
-      <p>Das passende Fahrzeug für Sie</p>
-    </div>
+  <div id="angebot-page" class="mt-[22rem] mx-16">
+    <h1>Unser Angebot</h1>
+    <div class="grid grid-cols-2 gap-y-8 gap-x-4 mt-16">
+      <div class="bg-light-blue p-6 flex gap-4 rounded-md">
+        <div>icon</div>
+        <p>Das passende Fahrzeug für Sie</p>
+      </div>
 
-    <div>
-      <div>icon</div>
-      <p>Professionelle Fahrzeugaufbereitung</p>
-    </div>
+      <div class="bg-light-blue p-6 flex gap-4 rounded-md">
+        <div>icon</div>
+        <p>Professionelle Fahrzeugaufbereitung</p>
+      </div>
 
-    <div>
-      <div>icon</div>
-      <p>Ausgebiege Probefahrt</p>
-    </div>
+      <div class="bg-light-blue p-6 flex gap-4 rounded-md">
+        <div>icon</div>
+        <p>Ausgebiege Probefahrt</p>
+      </div>
 
-    <div>
-      <div>icon</div>
-      <p>Inzahlungnahme des alten Fahrzeugs</p>
-    </div>
+      <div class="bg-light-blue p-6 flex gap-4 rounded-md">
+        <div>icon</div>
+        <p>Inzahlungnahme des alten Fahrzeugs</p>
+      </div>
 
-    <div>
-      <div>icon</div>
-      <p>Finanzdienstleistungen</p>
-    </div>
+      <div class="bg-light-blue p-6 flex gap-4 rounded-md">
+        <div>icon</div>
+        <p>Finanzdienstleistungen</p>
+      </div>
 
-    <div>
-      <div>icon</div>
-      <p>Zulassungsservice, An- und Abmeldung</p>
-    </div>
+      <div class="bg-light-blue p-6 flex gap-4 rounded-md">
+        <div>icon</div>
+        <p>Zulassungsservice, An- und Abmeldung</p>
+      </div>
 
-    <div>
-      <div>icon</div>
-      <p>Bis zu 24 Monate Gebrauchtwagengarantie</p>
+      <div class="bg-light-blue p-6 flex gap-4 rounded-md">
+        <div>icon</div>
+        <p>Bis zu 24 Monate Gebrauchtwagengarantie</p>
+      </div>
     </div>
   </div>
 
-  <div
-    id="finanzierung-garantie"
-    class="grid grid-cols-2 gap-x-10 gap-y-10 items-center"
-  >
-    <img
-      src="@/assets/images/realgarant.png"
-      alt="logo Real Garant"
-      class="max-h-20 mx-auto"
-    />
-    <img
-      src="@/assets/images/huk_coburg.png"
-      alt="logo Huk Coburg"
-      class="max-h-20 mx-auto"
-    />
-    <img
-      src="@/assets/images/santander_carcredit.png"
-      alt="logo Santander"
-      class="max-h-20 mx-auto"
-    />
-    <img
-      src="@/assets/images/multipart.png"
-      alt="logo multipart"
-      class="max-h-20 mx-auto"
-    />
+  <div id="finanzierung-garantie" class="mx-16 mt-40">
+    <h1>Finanzierung & Garantie</h1>
+    <div class="my-40 grid grid-cols-2 gap-x-10 gap-y-40 items-center relative">
+      <img
+        src="@/assets/images/realgarant.png"
+        alt="logo Real Garant"
+        class="max-h-40 hover:scale-110 duration-300"
+      />
+      <img
+        src="@/assets/images/huk_coburg.png"
+        alt="logo Huk Coburg"
+        class="max-h-40 mx-auto hover:scale-110 duration-300"
+      />
+      <img
+        src="@/assets/images/santander_carcredit.png"
+        alt="logo Santander"
+        class="max-h-40 hover:scale-110 duration-300"
+      />
+      <img
+        src="@/assets/images/multipart.png"
+        alt="logo multipart"
+        class="max-h-40 mx-auto hover:scale-110 duration-300"
+      />
+    </div>
   </div>
 
-  <div id="about-page">
-    <h1>Über Uns</h1>
-    <p>Wilkommen auf unserer Homepage</p>
-    <p>
+  <div id="about-page" class="bg-light-blue px-16">
+    <h1 class="pt-16">Über Uns</h1>
+    <p class="pt-20 text-4xl">Wilkommen auf unserer Homepage</p>
+    <p class="pt-16 text-4xl max-w-[1300px]">
       Wir unterstützen Sie gerne bei der Suche nach Ihrem neuen Fahrzeug. Mit
       über 20 Jahren Erfahrung in der Automobilbranche sind wir bestens
       gerüstet, um Ihre Anforderungen zu erfüllen.<br />
@@ -101,7 +107,7 @@
       gelistet sind, damit Sie bequem von zuhause aus nach Ihrem Wunschauto
       suchen können.
     </p>
-    <p>
+    <p class="py-20 text-4xl">
       Herzliche Grüße,<br />
       das Team von VTG-Musli Automobile.
     </p>
@@ -286,15 +292,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "App",
+};
 </script>
 
-<style scoped>
-#background-image {
-  background-image: url("@/assets/images/background-car.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: rgb(128, 128, 128, 0.3);
-  height: 100vh;
-}
-</style>
+<style scoped></style>
