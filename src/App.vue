@@ -6,8 +6,17 @@
       class="absolute -z-10 opacity-35"
     />
 
-    <header class="flex justify-between p-16">
-      <img src="@/assets/images/vtg-logo.png" alt="vtg musli logo" />
+    <header class="flex items-center justify-between p-16">
+      <img
+        src="@/assets/images/vtg-logo.png"
+        alt="vtg musli logo"
+        class="w-72"
+      />
+      <!-- <img
+        src="@/assets/images/vtg_mid_rahmen.png"
+        class="w-56"
+        alt="vtg musli logo"
+      /> -->
       <div class="flex gap-8">
         <a class="cursor:pointer hover:text-light-orange" href="#angebot-page"
           >Angebot</a
@@ -34,8 +43,8 @@
       <h2 class="mt-10">
         Entspannt unterwegs:<br />Qualität für sichere Fahrten!
       </h2>
-      <div class="mt-40">
-        <svg
+      <div class="mt-40 relative">
+        <!-- <svg
           width="180px"
           height="180px"
           viewBox="0 0 72 72"
@@ -63,9 +72,11 @@
               ></path>
             </g>
           </g>
-        </svg>
+        </svg> -->
         <p>Unsere Fahrzeuge:</p>
-        <p><a href="">mobile<span>.</span>de</a></p>
+        <p>
+          <a href="">mobile<span class="text-light-orange">.</span>de</a>
+        </p>
       </div>
     </div>
   </div>
@@ -195,24 +206,36 @@
     <h1 class="p-16">Kontakt</h1>
     <div class="grid grid-cols-2 gap-x-8 text-[2rem]">
       <div class="bg-light-blue p-16 flex flex-col justify-around">
-        <div class="flex gap-4">
-          <div>icon</div>
+        <div class="flex items-center gap-4">
+          <img
+            src="@/assets/images/mail-icon.png"
+            alt="mail icon"
+            class="h-[3rem]"
+          />
           <a href="mailto:info@vtg-musli.de" class="text-blue-link"
             >info@vtg-musli.de</a
           >
         </div>
 
-        <div class="flex gap-4">
-          <div>icon</div>
-          <a href="" type="phone">+49 162 7549001</a>
+        <div class="flex items-center gap-4">
+          <img
+            src="@/assets/images/phone-icon.png"
+            alt="phone icon"
+            class="h-[3rem]"
+          />
+          <a href="tel:+491627549001" type="phone">+49 162 7549001</a>
         </div>
 
-        <div class="flex gap-4">
-          <div>icon</div>
+        <div class="flex items-center gap-4">
+          <img
+            src="@/assets/images/car-icon.png"
+            alt="car icon"
+            class="h-[3rem]"
+          />
           <a
             href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses"
             target="_blank"
-            class="cursor-pointer"
+            class="cursor-pointer text-blue-link"
             >mobile.de</a
           >
         </div>
@@ -234,8 +257,12 @@
     </div>
 
     <div class="m-16">
-      <div class="flex gap-4 text-[2rem] mt-32">
-        <div>icon</div>
+      <div class="flex items-center gap-4 text-[2rem] mt-32">
+        <img
+          src="@/assets/images/pin-icon.png"
+          alt="pin icon"
+          class="h-[3rem]"
+        />
         <p>Alte Geesteschleife 2, DE-27576 Bremerhaven</p>
       </div>
       <div>
