@@ -1,23 +1,91 @@
 <template>
-  <div id="start-page" class="relative">
+  <div
+    v-show="show_menu"
+    class="absolute rounded-bl-xl z-10 text-white top-0 right-0 bg-[#004d78]"
+  >
+    <div class="gap-6 p-4 flex flex-col">
+      <p
+        @click="show_menu = false"
+        class="pb-2 text-lg cursor:pointer hover:text-light-orange"
+      >
+        Menü schließen
+      </p>
+      <a
+        @click="show_menu = false"
+        class="cursor:pointer hover:text-light-orange"
+        href="#angebot-page"
+        >Angebot</a
+      >
+      <a
+        @click="show_menu = false"
+        class="cursor:pointer hover:text-light-orange"
+        href="#finanzierung-page"
+        >Finanzierung & Garantie</a
+      >
+      <a
+        @click="show_menu = false"
+        class="cursor:pointer hover:text-light-orange"
+        href="#about"
+        >Über Uns</a
+      >
+      <a
+        @click="show_menu = false"
+        class="cursor:pointer hover:text-light-orange"
+        href="#contact"
+        >Kontakt</a
+      >
+      <a
+        @click="show_menu = false"
+        class="cursor:pointer hover:text-light-orange"
+        href="#reviews"
+        >Bewertung</a
+      >
+    </div>
+  </div>
+
+  <div id="start-page" class="relative h-screen">
     <img
       src="@/assets/images/background-car.png"
       alt="photo car"
-      class="absolute -z-10 opacity-35"
+      class="absolute -z-10 opacity-35 w-full h-screen object-cover"
     />
 
-    <header class="flex items-center justify-between p-16">
+    <header class="flex items-start justify-between h-14 mb-16 mx-16 py-16">
       <img
         src="@/assets/images/vtg-logo.png"
         alt="vtg musli logo"
         class="w-72"
       />
-      <!-- <img
-        src="@/assets/images/vtg_mid_rahmen.png"
-        class="w-56"
-        alt="vtg musli logo"
-      /> -->
-      <div class="flex gap-6">
+
+      <div
+        v-show="!show_menu"
+        class="flex flex-col items-center lg:hidden cursor-pointer"
+        @click="show_menu = true"
+      >
+        <div
+          class="bg-[#004d78e6] w-14 h-14 rounded-2xl flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            height="100%"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </div>
+        <p class="text-[#004d78e6]">Menü</p>
+      </div>
+
+      <div class="gap-2 text-lg xl:text-[1.5rem] flex flex-row xl:gap-6 hide">
         <a class="cursor:pointer hover:text-light-orange" href="#angebot-page"
           >Angebot</a
         >
@@ -43,72 +111,50 @@
       <h2 class="mt-10">
         Entspannt unterwegs:<br />Qualität für sichere Fahrten!
       </h2>
-      <a class="inline-block" href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses" target="_blank">
-      <div class="koho mt-16 h-[16rem] w-[24rem] relative flex justify-center">
-        <!-- <svg
-          class="absolute top-0 left-0 m-0 p-0"
-          width="24rem"
-          height="24rem"
-          viewBox="0 0 72 72"
-          id="emoji"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#004D78"
-          transform="rotate(90)"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <g id="color"></g>
-            <g id="line">
-              <path
-                d="M56,36 C56,52.016 47.046,65 36,65 C24.954,65 16,52.016 16,36 C16,19.984 24.954,7 36,7 C47.046,7 56,19.984 56,36 z"
-              ></path>
-              <path
-                stroke="#004D78"
-                stroke-width="2"
-                d="M56,35.957 C56.035,51.973 47.109,64.977 36.063,65.001 C25.017,65.025 16.034,52.06 16,36.043 C15.965,20.027 24.891,7.023 35.937,6.999 C46.983,6.975 55.966,19.94 56,35.957 z"
-              ></path>
-            </g>
-          </g>
-        </svg> -->
 
-        <svg
-          height="16rem"
-          width="24rem"
-          xmlns="http://www.w3.org/2000/svg"
-          class="absolute top-0 left-0 -z-10"
+      <div class="relativ">
+        <a
+          class="inline-block"
+          href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses"
+          target="_blank"
         >
-          <ellipse
-            rx="12rem"
-            ry="6rem"
-            cx="12rem"
-            cy="8rem"
-            :style="{ fill: elipse_fill_color }"
-          />
-        </svg>
-        
-        <div
-          @mouseenter="elipse_fill_color = '#E1F8FDE5'"
-          @mouseleave="elipse_fill_color = '#004d78e6'"
-          class="flex flex-col text-white hover:text-[#004d78] text-4xl justify-center items-center"
-        >
-          <p>unsere Fahrzeuge:</p>
-          <p class="text-5xl">
-            <p >mobile<span class="text-light-orange">.</span>de</p>
-          </p>
-        </div>
+          <div
+            class="koho move-right bottom-16 h-[16rem] w-[24rem] absolute flex justify-center"
+          >
+            <svg
+              height="16rem"
+              width="24rem"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-0 left-0 -z-10"
+            >
+              <ellipse
+                rx="12rem"
+                ry="6rem"
+                cx="12rem"
+                cy="8rem"
+                :style="{ fill: elipse_fill_color }"
+              />
+            </svg>
+
+            <div
+              @mouseenter="elipse_fill_color = '#E1F8FDE5'"
+              @mouseleave="elipse_fill_color = '#004d78e6'"
+              class="flex flex-col text-white hover:text-[#004d78] text-4xl justify-center items-center"
+            >
+              <p>unsere Fahrzeuge:</p>
+              <p class="relat z-20 text-5xl">
+                mobile<span class="text-light-orange">.</span>de
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
-      </a>
     </div>
   </div>
 
-  <div id="angebot-page" class="mt-[22rem] mx-16">
+  <div id="angebot-page" class="mt-16 mx-16">
     <h1>Unser Angebot</h1>
-    <div class="grid grid-cols-2 gap-y-8 gap-x-4 mt-16">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-y-8 gap-x-4 mt-16">
       <div class="bg-light-blue p-6 flex items-center gap-4 rounded-md">
         <img
           src="@/assets/images/fahrzeug-icon.png"
@@ -176,12 +222,14 @@
 
   <div id="finanzierung-page" class="mx-16 mt-40">
     <h1>Finanzierung & Garantie</h1>
-    <div class="my-40 grid grid-cols-2 gap-x-10 gap-y-40 items-center relative">
+    <div
+      class="my-40 grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-40 items-center relative"
+    >
       <a href="https://realgarant.com/de-de/" target="_blank">
         <img
           src="@/assets/images/realgarant.png"
           alt="logo Real Garant"
-          class="max-h-40 hover:scale-110 duration-300"
+          class="max-h-40 hover:scale-110 duration-300 mx-auto"
       /></a>
       <a href="https://www.huk.de/" target="_blank"
         ><img
@@ -229,8 +277,8 @@
 
   <div id="contact">
     <h1 class="p-16">Kontakt</h1>
-    <div class="grid grid-cols-2 gap-x-8 text-[2rem]">
-      <div class="bg-light-blue p-16 flex flex-col justify-around">
+    <div class="grid grid-cols-1 gap-y-8 xl:grid-cols-2 xl:gap-x-8 text-[2rem]">
+      <div class="bg-light-blue p-16 flex flex-col gap-y-8 justify-around">
         <div class="flex items-center gap-4">
           <img
             src="@/assets/images/mail-icon.png"
@@ -294,8 +342,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.1023428714443!2d8.597124299999999!3d53.555940500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b6b107bad24647%3A0xb56cf34e16d2241!2sVTG-Musli%20Automobile!5e0!3m2!1sde!2sse!4v1711524128508!5m2!1sde!2sse"
           width="100%"
-          height="760"
-          class="mt-16"
+          class="mt-16 h-[70vh]"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -402,7 +449,7 @@
       >
     </div>
 
-    <div class="grid grid-cols-2 gap-x-40">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-40">
       <div class="mt-16">
         <div class="flex items-center">
           <svg
@@ -992,6 +1039,7 @@ export default {
   data() {
     return {
       elipse_fill_color: "#004d78e6",
+      show_menu: false,
     };
   },
 };
