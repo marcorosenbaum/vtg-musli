@@ -17,13 +17,13 @@
         class="w-56"
         alt="vtg musli logo"
       /> -->
-      <div class="flex gap-8">
+      <div class="flex gap-6">
         <a class="cursor:pointer hover:text-light-orange" href="#angebot-page"
           >Angebot</a
         >
         <a
           class="cursor:pointer hover:text-light-orange"
-          href="#finanzierung-garantie"
+          href="#finanzierung-page"
           >Finanzierung & Garantie</a
         >
         <a class="cursor:pointer hover:text-light-orange" href="#about"
@@ -43,10 +43,12 @@
       <h2 class="mt-10">
         Entspannt unterwegs:<br />Qualität für sichere Fahrten!
       </h2>
-      <div class="mt-40 relative">
+      <a class="inline-block" href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses" target="_blank">
+      <div class="koho mt-16 h-[16rem] w-[24rem] relative flex justify-center">
         <!-- <svg
-          width="180px"
-          height="180px"
+          class="absolute top-0 left-0 m-0 p-0"
+          width="24rem"
+          height="24rem"
           viewBox="0 0 72 72"
           id="emoji"
           xmlns="http://www.w3.org/2000/svg"
@@ -73,11 +75,34 @@
             </g>
           </g>
         </svg> -->
-        <p>Unsere Fahrzeuge:</p>
-        <p>
-          <a href="">mobile<span class="text-light-orange">.</span>de</a>
-        </p>
+
+        <svg
+          height="16rem"
+          width="24rem"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute top-0 left-0 -z-10"
+        >
+          <ellipse
+            rx="12rem"
+            ry="6rem"
+            cx="12rem"
+            cy="8rem"
+            :style="{ fill: elipse_fill_color }"
+          />
+        </svg>
+        
+        <div
+          @mouseenter="elipse_fill_color = '#E1F8FDE5'"
+          @mouseleave="elipse_fill_color = '#004d78e6'"
+          class="flex flex-col text-white hover:text-[#004d78] text-4xl justify-center items-center"
+        >
+          <p>unsere Fahrzeuge:</p>
+          <p class="text-5xl">
+            <p >mobile<span class="text-light-orange">.</span>de</p>
+          </p>
+        </div>
       </div>
+      </a>
     </div>
   </div>
 
@@ -149,7 +174,7 @@
     </div>
   </div>
 
-  <div id="finanzierung-garantie" class="mx-16 mt-40">
+  <div id="finanzierung-page" class="mx-16 mt-40">
     <h1>Finanzierung & Garantie</h1>
     <div class="my-40 grid grid-cols-2 gap-x-10 gap-y-40 items-center relative">
       <a href="https://realgarant.com/de-de/" target="_blank">
@@ -186,7 +211,7 @@
       Wir unterstützen Sie gerne bei der Suche nach Ihrem neuen Fahrzeug. Mit
       über 20 Jahren Erfahrung in der Automobilbranche sind wir bestens
       gerüstet, um Ihre Anforderungen zu erfüllen.<br />
-      Bitte beachten Sie, dass unsere Fahrzeuge auch auf der Website
+      Bitte beachten Sie, dass unsere Fahrzeuge auf der Website
       <a
         href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses"
         target="_blank"
@@ -233,7 +258,7 @@
             class="h-[3rem]"
           />
           <a
-            href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses"
+            href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#about"
             target="_blank"
             class="cursor-pointer text-blue-link"
             >mobile.de</a
@@ -963,7 +988,10 @@
 <script>
 export default {
   name: "App",
+  data() {
+    return {
+      elipse_fill_color: "#004d78e6",
+    };
+  },
 };
 </script>
-
-<style scoped></style>
