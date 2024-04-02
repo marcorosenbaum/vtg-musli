@@ -1,5 +1,5 @@
 <template>
-  <div id="review-section" class="mx-16">
+  <div id="review-section" class="mx-8 lg:mx-16">
     <h1 class="my-16">Bewertungen</h1>
     <div class="flex gap-8 items-end">
       <div>
@@ -95,7 +95,7 @@
       >
     </div>
 
-    <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-40">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-40 text-xl">
       <div class="mt-16">
         <div class="flex items-center">
           <svg

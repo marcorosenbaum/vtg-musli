@@ -7,7 +7,9 @@
   <contact-section />
   <review-section />
 
-  <footer class="bg-dark-blue text-white py-16 mt-32 flex justify-center">
+  <footer
+    class="bg-dark-blue text-white text-sm py-8 mt-32 flex px-8 lg:px-16 hover:text-light-orange transform duration-300"
+  >
     <a href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#imprint" target="_blank"
       >Impressum & Rechtliches</a
     >

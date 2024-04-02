@@ -1,5 +1,5 @@
 <template>
-  <div id="angebot-section" class="mt-16 mx-16">
+  <div id="angebot-section" class="mt-16 mx-8 lg:mx-16">
     <h1>Unser Angebot</h1>
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-y-8 gap-x-4 mt-16">
       <div class="bg-light-blue p-6 flex items-center gap-4 rounded-md">

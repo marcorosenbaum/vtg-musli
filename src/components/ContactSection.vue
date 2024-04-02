@@ -1,15 +1,19 @@
 <template>
   <div id="contact-section">
-    <h1 class="p-16">Kontakt</h1>
+    <h1 class="py-16 px-8 lg:px16">Kontakt</h1>
     <div class="grid grid-cols-1 gap-y-8 xl:grid-cols-2 xl:gap-x-8 text-[2rem]">
-      <div class="bg-light-blue p-16 flex flex-col gap-y-8 justify-around">
+      <div
+        class="bg-light-blue py-16 px-8 lg:px-16 flex flex-col gap-y-8 justify-around"
+      >
         <div class="flex items-center gap-4">
           <img
             src="@/assets/images/mail-icon.png"
             alt="mail icon"
             class="h-[3rem]"
           />
-          <a href="mailto:info@vtg-musli.de" class="text-blue-link"
+          <a
+            href="mailto:info@vtg-musli.de"
+            class="xl:hover:text-light-orange transform duration-300 text-blue-link sm:text-black"
             >info@vtg-musli.de</a
           >
         </div>
@@ -20,7 +24,12 @@
             alt="phone icon"
             class="h-[3rem]"
           />
-          <a href="tel:+491627549001" type="phone">+49 162 7549001</a>
+          <a
+            href="tel:+491627549001"
+            class="cursor-pointer xl:hover:text-light-orange text-blue-link sm:text-black transform duration-300"
+            type="phone"
+            >+49 162 7549001</a
+          >
         </div>
 
         <div class="flex items-center gap-4">
@@ -32,18 +41,20 @@
           <a
             href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#about"
             target="_blank"
-            class="cursor-pointer text-blue-link"
+            class="cursor-pointer xl:hover:text-light-orange transform duration-300 text-blue-link sm:text-black"
             >mobile.de</a
           >
         </div>
       </div>
 
-      <div class="bg-light-blue p-16 text-[2rem] flex flex-col gap-10">
+      <div
+        class="bg-light-blue py-16 px-8 lg:px-16 text-[2rem] flex flex-col gap-10"
+      >
         <p><b>Öffnungszeiten</b></p>
 
         <p>
           Montag - Freitag<br />
-          09:30 - 12:30 Uhr & 14:00 - 18:00 Uhr
+          09:30 - 12:30 Uhr & 14:00&nbsp;-&nbsp;18:00&nbsp;Uhr
         </p>
 
         <p>
@@ -53,7 +64,7 @@
       </div>
     </div>
 
-    <div class="m-16">
+    <div class="mt-16 mx-8 lg:mx-16">
       <div class="flex items-center gap-4 text-[2rem] mt-32">
         <img
           src="@/assets/images/pin-icon.png"

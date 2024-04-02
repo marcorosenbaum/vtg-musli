@@ -1,5 +1,5 @@
 <template>
-  <div id="about-section" class="bg-light-blue px-16">
+  <div id="about-section" class="bg-light-blue px-8 lg:px-16">
     <h1 class="pt-16">Über Uns</h1>
     <p class="pt-24 text-[2rem]">Wilkommen auf unserer Homepage!</p>
     <p class="pt-20 text-[2rem] max-w-[1300px]">
@@ -10,7 +10,7 @@
       <a
         href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses"
         target="_blank"
-        class="text-light-orange cursor-pointer"
+        class="text-blue-link cursor-pointer"
         >mobile.de</a
       >
       gelistet sind, damit Sie bequem von zuhause aus nach Ihrem Wunschauto
