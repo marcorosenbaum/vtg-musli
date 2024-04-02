@@ -1,6 +1,6 @@
 <template>
   <div id="contact-section">
-    <h1 class="py-16 px-8 lg:px16">Kontakt</h1>
+    <h1 class="py-16 px-8 lg:px-16">Kontakt</h1>
     <div class="grid grid-cols-1 gap-y-8 xl:grid-cols-2 xl:gap-x-8 text-[2rem]">
       <div
         class="bg-light-blue py-16 px-8 lg:px-16 flex flex-col gap-y-8 justify-around"
