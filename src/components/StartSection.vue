@@ -1,44 +1,70 @@
 <template>
   <div
-    v-show="show_menu"
-    class="absolute rounded-bl-xl z-10 text-white top-0 right-0 bg-[#004d78]"
+    class="absolute slide z-10 text-[#004D78] top-[-100%] rounded-b-3xl right-10 bg-[#E1F8FD]"
+    :class="{ menu: show_menu }"
   >
-    <div class="gap-6 p-4 flex flex-col text-lg">
-      <p
-        @click="show_menu = false"
-        class="pb-2 text-sm cursor-pointer hover:text-light-orange transform duration-300"
-      >
-        Menü schließen
-      </p>
-      <a
-        @click="show_menu = false"
-        class="hover:text-light-orange transform duration-300"
-        href="#angebot-section"
-        >Angebot</a
-      >
+    <div class="gap-8 p-8 flex flex-col text-2xl">
+      <div>
+        <div
+          @click="show_menu = false"
+          class="text-sm cursor-pointer hover:text-light-orange transform duration-300"
+        >
+          <div class="flex justify-end">
+            <img class="w-8" src="../assets/images/close-icon.png" />
+          </div>
+        </div>
+        <a
+          @click="show_menu = false"
+          class="hover:text-light-orange transform duration-300"
+          href="#angebot-section"
+          ><div class="flex gap-4 items-center">
+            <img class="w-12" src="../assets/images/angebot-icon.png" /><span
+              >Angebot</span
+            >
+          </div></a
+        >
+      </div>
+
       <a
         @click="show_menu = false"
         class="hover:text-light-orange transform duration-300"
         href="#finanzierung-section"
-        >Finanzierung & Garantie</a
+        ><div class="flex gap-4 items-center">
+          <img class="w-12" src="../assets/images/finanzierung-icon.png" /><span
+            >Finanzierung & Garantie</span
+          >
+        </div></a
       >
       <a
         @click="show_menu = false"
         class="hover:text-light-orange transform duration-300"
         href="#about-section"
-        >Über Uns</a
+        ><div class="flex gap-4 items-center">
+          <img class="w-12" src="../assets/images/über-uns-icon.png" /><span
+            >Über Uns</span
+          >
+        </div></a
       >
       <a
         @click="show_menu = false"
         class="hover:text-light-orange transform duration-300"
         href="#contact-section"
-        >Kontakt</a
+        ><div class="flex gap-4 items-center">
+          <img class="w-12" src="../assets/images/menü-phone-icon.png" /><span
+            >Kontakt</span
+          >
+        </div></a
       >
       <a
         @click="show_menu = false"
         class="hover:text-light-orange transform duration-300"
         href="#review-section"
-        >Bewertung</a
+      >
+        <div class="flex gap-4 items-center">
+          <img class="w-12" src="../assets/images/bewertung-icon.png" /><span
+            >Bewertung</span
+          >
+        </div></a
       >
     </div>
   </div>
@@ -174,4 +200,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.menu {
+  top: 0;
+}
+
+.slide {
+  transition: all 1.4s;
+}
+</style>
