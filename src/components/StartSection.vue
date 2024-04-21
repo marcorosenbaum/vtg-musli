@@ -1,74 +1,5 @@
 <template>
-  <div
-    class="absolute slide z-10 text-[#004D78] top-[-100%] rounded-b-3xl right-10 bg-[#E1F8FD]"
-    :class="{ menu: show_menu }"
-  >
-    <div class="gap-8 p-8 flex flex-col text-2xl">
-      <div>
-        <div
-          @click="show_menu = false"
-          class="text-sm cursor-pointer hover:text-light-orange transform duration-300"
-        >
-          <div class="flex justify-end">
-            <img class="w-8" src="../assets/images/close-icon.png" />
-          </div>
-        </div>
-        <a
-          @click="show_menu = false"
-          class="hover:text-light-orange transform duration-300"
-          href="#angebot-section"
-          ><div class="flex gap-4 items-center">
-            <img class="w-12" src="../assets/images/angebot-icon.png" /><span
-              >Angebot</span
-            >
-          </div></a
-        >
-      </div>
-
-      <a
-        @click="show_menu = false"
-        class="hover:text-light-orange transform duration-300"
-        href="#finanzierung-section"
-        ><div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/finanzierung-icon.png" /><span
-            >Finanzierung & Garantie</span
-          >
-        </div></a
-      >
-      <a
-        @click="show_menu = false"
-        class="hover:text-light-orange transform duration-300"
-        href="#about-section"
-        ><div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/über-uns-icon.png" /><span
-            >Über Uns</span
-          >
-        </div></a
-      >
-      <a
-        @click="show_menu = false"
-        class="hover:text-light-orange transform duration-300"
-        href="#contact-section"
-        ><div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/menü-phone-icon.png" /><span
-            >Kontakt</span
-          >
-        </div></a
-      >
-      <a
-        @click="show_menu = false"
-        class="hover:text-light-orange transform duration-300"
-        href="#review-section"
-      >
-        <div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/bewertung-icon.png" /><span
-            >Bewertung</span
-          >
-        </div></a
-      >
-    </div>
-  </div>
-
+  <dropdown-menu :show_menu="show_menu" @close-menu="show_menu = false" />
   <div id="start-section" class="relative h-screen">
     <img
       src="@/assets/images/background-car.png"
@@ -76,69 +7,7 @@
       class="absolute -z-10 opacity-35 w-full h-screen object-cover"
     />
 
-    <header
-      class="flex items-start justify-between h-14 mb-16 mx-8 lg:mx-16 pt-4 pb-4"
-    >
-      <img
-        src="@/assets/images/vtg-logo.png"
-        alt="vtg musli logo"
-        class="w-48"
-      />
-
-      <div
-        v-show="!show_menu"
-        class="flex flex-col items-center lg:hidden cursor-pointer"
-        @click="show_menu = true"
-      >
-        <div class="w-14 h-14 rounded-2xl flex justify-center items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100%"
-            height="100%"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#004d78"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-menu"
-          >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-          </svg>
-        </div>
-        <!-- <p class="text-[#004d78e6]">Menü</p> -->
-      </div>
-
-      <div class="gap-2 text-lg flex flex-row xl:gap-6 hide text-[#004d78]">
-        <a
-          class="cursor:pointer hover:text-light-orange transform duration-300"
-          href="#angebot-section"
-          >Angebot</a
-        >
-        <a
-          class="cursor:pointer hover:text-light-orange transform duration-300"
-          href="#finanzierung-section"
-          >Finanzierung & Garantie</a
-        >
-        <a
-          class="cursor:pointer hover:text-light-orange transform duration-300"
-          href="#about-section"
-          >Über Uns</a
-        >
-        <a
-          class="cursor:pointer hover:text-light-orange transform duration-300"
-          href="#contact-section"
-          >Kontakt</a
-        >
-        <a
-          class="cursor:pointer hover:text-light-orange transform duration-300"
-          href="#review-section"
-          >Bewertung</a
-        >
-      </div>
-    </header>
+    <app-header :show_menu="show_menu" @open-menu="show_menu = true" />
 
     <div class="mx-8 lg:mx-16">
       <h1>Automobile</h1>
@@ -189,8 +58,15 @@
 </template>
 
 <script>
+import DropdownMenu from "./DropdownMenu.vue";
+import AppHeader from "./Header.vue";
+
 export default {
   name: "StartSection",
+  components: {
+    DropdownMenu,
+    AppHeader,
+  },
   data() {
     return {
       elipse_fill_color: "#004d78e6",
@@ -200,12 +76,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.menu {
-  top: 0;
-}
-
-.slide {
-  transition: all 1.4s;
-}
-</style>
+<style scoped></style>
