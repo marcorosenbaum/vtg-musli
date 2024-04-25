@@ -44,12 +44,6 @@ html {
   }
 }
 
-@media screen and (min-width: 550px) {
-  html {
-    font-size: 12px;
-  }
-}
-
 @media screen and (min-width: 750px) {
   html {
     font-size: 14px;
@@ -68,7 +62,13 @@ html {
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 325px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-height: 600px) and (min-width: 400px) {
   html {
     font-size: 10px;
   }
@@ -76,7 +76,7 @@ html {
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
   .move-right {
-    right: 0;
+    right: 4rem;
     scale: 0.8;
     bottom: 0;
   }
