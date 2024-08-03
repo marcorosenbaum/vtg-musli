@@ -4,28 +4,28 @@
       <div class="w-full">
         <img
           src="@/assets/images/photo-t1-1.png"
-          class="object-cover w-screen"
+          class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
       </div>
       <div class="w-full">
         <img
           src="@/assets/images/photo-t1-2.png"
-          class="object-cover w-screen"
+          class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
       </div>
       <div class="w-full">
         <img
           src="@/assets/images/photo-t1-1.png"
-          class="object-cover w-screen"
+          class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
       </div>
       <div class="w-full">
         <img
           src="@/assets/images/photo-t1-2.png"
-          class="object-cover w-screen"
+          class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
       </div>
@@ -43,45 +43,62 @@ export default {
   0% {
     transform: translateX(0);
   }
-  8.33% {
+  5.56% {
+    transform: translateX(0);
+  }
+  11.12% {
     transform: translateX(0);
   }
   16.67% {
     transform: translateX(-100vw);
   }
-  25% {
+  22.23% {
+    transform: translateX(-100vw);
+  }
+  27.79% {
     transform: translateX(-100vw);
   }
   33.34% {
     transform: translateX(-200vw);
   }
-  41.67% {
+  38.9% {
+    transform: translateX(-200vw);
+  }
+  44.46% {
     transform: translateX(-200vw);
   }
   50.01% {
     transform: translateX(-300vw);
   }
-  58.34% {
+  55.57% {
+    transform: translateX(-300vw);
+  }
+  61.13% {
     transform: translateX(-300vw);
   }
   66.68% {
     transform: translateX(-200vw);
   }
-  75.01% {
+  72.24% {
+    transform: translateX(-200vw);
+  }
+  77.8% {
     transform: translateX(-200vw);
   }
   83.35% {
     transform: translateX(-100vw);
   }
-  91.68% {
+  88.91% {
+    transform: translateX(-100vw);
+  }
+  94.47% {
     transform: translateX(-100vw);
   }
   100% {
     transform: translateX(0);
   }
 }
-
 .slide-container {
-  animation: slide 30s infinite;
+  animation: slide 40s infinite ease-in-out;
 }
 </style>

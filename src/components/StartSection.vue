@@ -1,17 +1,17 @@
 <template>
   <dropdown-menu :show_menu="show_menu" @close-menu="show_menu = false" />
-  <div id="start-section" class="relative h-screen">
+  <div id="start-section" class="relative h-screen overflow-hidden">
     <!-- <img
       src="@/assets/images/photo-t1-1.png"
       alt="photo car"
       class="landscape-image absolute -z-10 opacity-50 w-full h-screen object-cover"
-    />
+    /> -->
     <img
       src="@/assets/images/photo-t1-2.png"
       alt="photo car"
-      class="portrait-image absolute -z-10 opacity-50 w-full h-screen object-cover"
-    /> -->
-    <slide-show />
+      class="portrait-image absolute -z-10 w-full h-screen object-cover"
+    />
+    <slide-show class="landscape-image" />
 
     <div class="mx-8 lg:mx-16 pt-24">
       <h1>Automobile</h1>
