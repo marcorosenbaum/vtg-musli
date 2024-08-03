@@ -1,15 +1,19 @@
 <template>
   <dropdown-menu :show_menu="show_menu" @close-menu="show_menu = false" />
   <div id="start-section" class="relative h-screen">
-    <img
-      src="@/assets/images/background-car.png"
+    <!-- <img
+      src="@/assets/images/photo-t1-1.png"
       alt="photo car"
-      class="absolute -z-10 opacity-35 w-full h-screen object-cover"
+      class="landscape-image absolute -z-10 opacity-50 w-full h-screen object-cover"
     />
+    <img
+      src="@/assets/images/photo-t1-2.png"
+      alt="photo car"
+      class="portrait-image absolute -z-10 opacity-50 w-full h-screen object-cover"
+    /> -->
+    <slide-show />
 
-    <app-header :show_menu="show_menu" @open-menu="show_menu = true" />
-
-    <div class="mx-8 lg:mx-16">
+    <div class="mx-8 lg:mx-16 pt-24">
       <h1>Automobile</h1>
       <h2 class="mt-2">
         Entspannt unterwegs:<br />Qualität für sichere Fahrten!
@@ -24,7 +28,7 @@
           <div
             class="koho move-right bottom-12 h-[16rem] w-[24rem] absolute flex justify-center"
           >
-            <svg
+            <!-- <svg
               height="16rem"
               width="24rem"
               xmlns="http://www.w3.org/2000/svg"
@@ -38,16 +42,15 @@
                 :style="{ fill: elipse_fill_color }"
                 class="transform duration-1000"
               />
-            </svg>
-
+            </svg> -->
+            <!-- @mouseenter="elipse_fill_color = '#E1F8FDE5'"
+              @mouseleave="elipse_fill_color = '#004d78e6'" -->
             <div
-              @mouseenter="elipse_fill_color = '#E1F8FDE5'"
-              @mouseleave="elipse_fill_color = '#004d78e6'"
-              class="flex flex-col text-white hover:text-[#004d78] text-4xl justify-center items-center"
+              class="flex flex-col text-white hover:text-light-orange duration-300 text-4xl justify-center items-center"
             >
               <p>unsere Fahrzeuge:</p>
               <p class="z-20 text-5xl">
-                mobile<span class="text-light-orange">.</span>de
+                mobile<span class="text-[#004d78]">.</span>de
               </p>
             </div>
           </div>
@@ -60,12 +63,14 @@
 <script>
 import DropdownMenu from "./DropdownMenu.vue";
 import AppHeader from "./Header.vue";
+import SlideShow from "./SlideShow.vue";
 
 export default {
   name: "StartSection",
   components: {
     DropdownMenu,
     AppHeader,
+    SlideShow,
   },
   data() {
     return {
@@ -76,4 +81,22 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.landscape-image {
+  display: none;
+}
+
+.portrait-image {
+  display: block;
+}
+
+@media (orientation: landscape) {
+  .landscape-image {
+    display: block;
+  }
+
+  .portrait-image {
+    display: none;
+  }
+}
+</style>

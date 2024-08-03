@@ -1,9 +1,14 @@
 <template>
   <header
-    class="flex items-start justify-between h-14 mb-16 mx-8 lg:mx-16 pt-4 pb-4"
+    class="fixed top-0 left-0 right-0 drop-shadow-xl bg-white z-[1000] flex items-start justify-between min-h-14 mb-16 px-8 lg:px-16 pt-4 pb-4"
   >
-    <img src="@/assets/images/vtg-logo.png" alt="vtg musli logo" class="w-48" />
-
+    <a href="#start-section">
+      <img
+        src="@/assets/images/vtg-logo.png"
+        alt="vtg musli logo"
+        class="w-48"
+      />
+    </a>
     <div
       v-show="!show_menu"
       class="flex flex-col items-center lg:hidden cursor-pointer"

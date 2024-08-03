@@ -1,5 +1,5 @@
 <template>
-  <div id="finanzierung-section" class="mx-8 lg:mx-16 mt-40">
+  <div id="finanzierung-section" class="mx-8 lg:mx-16 pt-40">
     <h1>Finanzierung & Garantie</h1>
     <div
       class="my-40 grid grid-cols-1 xl:grid-cols-2 gap-x-10 gap-y-40 items-center relative"

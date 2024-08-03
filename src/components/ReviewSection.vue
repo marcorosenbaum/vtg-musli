@@ -1,6 +1,6 @@
 <template>
   <div id="review-section" class="mx-8 lg:mx-16">
-    <h1 class="my-16">Bewertungen</h1>
+    <h1 class="py-16">Bewertungen</h1>
     <div class="flex gap-8 items-end">
       <div>
         <div class="text-[4.5rem] text-gray-500">5,0</div>

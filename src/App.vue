@@ -1,4 +1,5 @@
 <template>
+  <app-header :show_menu="show_menu" @open-menu="show_menu = true" />
   <start-section />
   <angebot-section />
   <finanzierung-section />
@@ -23,6 +24,7 @@ import FinanzierungSection from "@/components/FinanzierungSection.vue";
 import AboutSection from "@/components/AboutSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
 import ReviewSection from "@/components/ReviewSection.vue";
+import AppHeader from "@/components/Header.vue";
 
 export default {
   name: "App",
@@ -33,6 +35,7 @@ export default {
     AboutSection,
     ContactSection,
     ReviewSection,
+    AppHeader,
   },
 };
 </script>
