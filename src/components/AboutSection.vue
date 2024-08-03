@@ -10,7 +10,7 @@
       <a
         href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses"
         target="_blank"
-        class="text-blue-link cursor-pointer"
+        class="text-blue-link cursor-pointer hover:text-light-orange duration-300"
         >mobile.de</a
       >
       gelistet sind, damit Sie bequem von zuhause aus nach Ihrem Wunschauto
@@ -18,7 +18,7 @@
     </p>
     <p class="py-20 text-[2rem]">
       Herzliche Grüße,<br />
-      das Team von VTG-Musli Automobile.
+      das Team von VTG-Musli Automobile
     </p>
   </div>
 </template>

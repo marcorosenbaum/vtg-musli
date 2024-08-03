@@ -90,7 +90,7 @@
       <a
         href="https://www.google.com/search?sca_esv=391f93f6c7aeb7e3&rlz=1C5CHFA_enDE815DE815&hl=de-SE&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCuETK9muM7XIxihiJmpK80mr01QGApq4tXP1LDaB_uKpKA-N8r7WKWoo-cpQFnJX3nK7OWyMxLwyJ2g80bpfVC2LR-c6dDp2xBT2FHVa2zM3wiTdE2-qOTX02Q_5idJUXcItFYsA&si=AKbGX_oXOTjHK3vNPxrwAU4tsC2W_rsdJDrrSHpqUAOdbOh1q4o4xJ2y447s0exXN-t2Q4Bcx707FvmVmaDBNT-0PxmFOwNnaMGJqoWy2AaPltj2rSjBEZU%3D&q=VTG-Musli+Automobile+Rezensionen&sa=X&ved=2ahUKEwj4pea4xpeFAxVlAxAIHcSSBREQ3PALegQIUxAF&biw=1225&bih=968&dpr=1"
         target="_blank"
-        class="text-[2rem] text-blue-link leading-none"
+        class="text-[2rem] text-blue-link leading-none hover:text-light-orange duration-300"
         >Google Bewertungen</a
       >
     </div>

@@ -26,7 +26,7 @@
           alt="probefahrt icon"
           class="h-[3rem]"
         />
-        <p>Ausgebiege Probefahrt</p>
+        <p>Ausgiebige Probefahrt</p>
       </div>
 
       <div class="bg-light-blue p-6 flex items-center gap-4 rounded-md">
