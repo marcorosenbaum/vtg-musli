@@ -64,6 +64,15 @@
         />
         <p>Bis zu 24 Monate Gebrauchtwagengarantie</p>
       </div>
+
+      <div class="bg-light-blue p-6 flex items-center gap-4 rounded-md">
+        <img
+          src="@/assets/images/erstklassiger-service.png"
+          alt="garantie icon"
+          class="h-[3rem]"
+        />
+        <p>Erstklassiger Kundenservice</p>
+      </div>
     </div>
   </div>
 </template>

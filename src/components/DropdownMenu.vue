@@ -1,16 +1,16 @@
 <template>
   <div
-    class="absolute slide z-10 text-[#004D78] top-[-100%] rounded-b-3xl right-10 bg-[#E1F8FD]"
+    class="fixed slide z-[1100] text-[#004D78] top-[-200%] w-screen h-screen bg-[#E1F8FD]"
     :class="{ menu: show_menu }"
   >
-    <div class="gap-8 p-8 flex flex-col text-2xl">
+    <div class="gap-20 p-16 flex flex-col text-4xl">
       <div>
         <div
           @click="$emit('close-menu')"
-          class="text-sm cursor-pointer hover:text-light-orange transform duration-300"
+          class="text-3xl mb-40 cursor-pointer hover:text-light-orange transform duration-300"
         >
           <div class="flex justify-end">
-            <img class="w-8" src="../assets/images/close-icon.png" />
+            <img class="w-16" src="../assets/images/close-icon.png" />
           </div>
         </div>
         <a
@@ -85,6 +85,6 @@ export default {
 }
 
 .slide {
-  transition: all 1.4s;
+  transition: all 0.5s;
 }
 </style>

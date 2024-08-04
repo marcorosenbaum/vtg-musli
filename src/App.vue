@@ -1,4 +1,5 @@
 <template>
+  <dropdown-menu :show_menu="show_menu" @close-menu="show_menu = false" />
   <app-header :show_menu="show_menu" @open-menu="show_menu = true" />
   <start-section />
   <angebot-section />
@@ -25,10 +26,12 @@ import AboutSection from "@/components/AboutSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
 import ReviewSection from "@/components/ReviewSection.vue";
 import AppHeader from "@/components/Header.vue";
+import DropdownMenu from "@/components/DropdownMenu.vue";
 
 export default {
   name: "App",
   components: {
+    DropdownMenu,
     StartSection,
     AngebotSection,
     FinanzierungSection,
@@ -36,6 +39,12 @@ export default {
     ContactSection,
     ReviewSection,
     AppHeader,
+  },
+  data() {
+    return {
+      elipse_fill_color: "#004d78e6",
+      show_menu: false,
+    };
   },
 };
 </script>

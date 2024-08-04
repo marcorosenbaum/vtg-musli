@@ -1,18 +1,18 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 drop-shadow-xl bg-white z-[1000] flex items-start justify-between min-h-14 mb-16 px-8 lg:px-16 pt-4 pb-4"
+    class="fixed top-0 left-0 right-0 drop-shadow-xl bg-white z-[1000] flex items-center justify-between min-h-14 mb-16 px-8 lg:px-16 pt-4 pb-4"
   >
     <a href="#start-section">
       <img
-        src="@/assets/images/vtg-logo.png"
+        src="@/assets/images/vtg-logo-lean.png"
         alt="vtg musli logo"
-        class="w-48"
+        class="w-60"
       />
     </a>
     <div
       v-show="!show_menu"
       class="flex flex-col items-center lg:hidden cursor-pointer"
-      @click="$emit('open-menu')"
+      @click="handleClick"
     >
       <div class="w-14 h-14 rounded-2xl flex justify-center items-center">
         <svg
@@ -69,6 +69,12 @@ export default {
   name: "AppHeader",
   props: {
     show_menu: Boolean,
+  },
+  methods: {
+    handleClick() {
+      console.log("clicked");
+      this.$emit("open-menu");
+    },
   },
 };
 </script>
