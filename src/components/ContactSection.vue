@@ -13,7 +13,7 @@
           />
           <a
             href="mailto:info@vtg-musli.de"
-            class="xl:hover:text-light-orange transform duration-300 text-blue-link sm:text-black"
+            class="xl:hover:text-light-orange transform duration-300 text-blue-link"
             >info@vtg-musli.de</a
           >
         </div>
@@ -26,7 +26,7 @@
           />
           <a
             href="tel:+491627549001"
-            class="cursor-pointer xl:hover:text-light-orange text-blue-link sm:text-black transform duration-300"
+            class="cursor-pointer xl:hover:text-light-orange text-blue-link transform duration-300"
             type="phone"
             >+49 162 7549001</a
           >
@@ -41,7 +41,7 @@
           <a
             href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#about"
             target="_blank"
-            class="cursor-pointer xl:hover:text-light-orange transform duration-300 text-blue-700 sm:text-black"
+            class="cursor-pointer xl:hover:text-light-orange transform duration-300 text-blue-link"
             >mobile.de</a
           >
         </div>

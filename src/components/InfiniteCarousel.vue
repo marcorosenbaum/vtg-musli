@@ -43,7 +43,7 @@
           class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
-        <h2 class="absolute top-[5%] right-[5%] text-white">
+        <h2 class="absolute top-[5%] pl-8 right-[4%] text-white">
           Qualität für sichere Fahrten.
         </h2>
       </div>

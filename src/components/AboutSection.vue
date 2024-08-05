@@ -10,7 +10,7 @@
       <a
         href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#ses"
         target="_blank"
-        class="text-blue-link cursor-pointer font-bold hover:text-light-orange duration-300"
+        class="text-blue-link cursor-pointer hover:text-light-orange duration-300"
         >mobile.de</a
       >
       gelistet sind, damit Sie bequem von zuhause aus nach Ihrem Wunschauto
