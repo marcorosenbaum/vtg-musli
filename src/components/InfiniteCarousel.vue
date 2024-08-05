@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 .slide-container {
-  animation: slide 10s infinite;
+  animation: slide 50s infinite;
 }
 
 @keyframes slide {
