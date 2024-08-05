@@ -5,7 +5,7 @@
     target="_blank"
   >
     <div
-      class="absolute bottom-[3%] right-0 bg-sky-800/80 rounded-l-[60px] py-8 px-14"
+      class="absolute lg:bottom-[3%] bottom-[8%] right-0 bg-sky-800/80 rounded-l-[60px] py-8 px-14"
     >
       <div
         class="koho move-right text-white hover:text-light-orange duration-300 text-2xl flex flex-col items-center"
@@ -43,7 +43,9 @@
           class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
-        <h2 class="absolute top-[5%] pl-8 right-[4%] text-white">
+        <h2
+          class="absolute top-[5%] pl-8 portrait:left-[22%] landscape:right-[4%] text-white"
+        >
           Qualität für sichere Fahrten.
         </h2>
       </div>
@@ -53,7 +55,9 @@
           class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
-        <h2 class="absolute bottom-[15%] left-[5%] text-white">
+        <h2
+          class="absolute landscape:bottom-[15%] portrait:top-[10%] left-[5%] text-white"
+        >
           Entspannt unterwegs.
         </h2>
       </div>
@@ -77,7 +81,7 @@ export default {
 
 <style scoped>
 .slide-container {
-  animation: slide 50s infinite;
+  animation: slide 10s infinite;
 }
 
 @keyframes slide {
