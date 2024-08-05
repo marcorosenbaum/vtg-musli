@@ -6,7 +6,8 @@ export default {
       colors: {
         "light-blue": "#E1F8FD",
         "light-orange": "#FF7E03",
-        "blue-link": "#00A4FF",
+        // "blue-link": "#00A4FF",
+        "blue-link": "#004196",
         "dark-blue": "#004D78",
       },
     },

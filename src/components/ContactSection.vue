@@ -41,7 +41,7 @@
           <a
             href="https://home.mobile.de/VTGMUSLIAUTOMOBILE#about"
             target="_blank"
-            class="cursor-pointer xl:hover:text-light-orange transform duration-300 text-blue-link sm:text-black"
+            class="cursor-pointer xl:hover:text-light-orange transform duration-300 text-blue-700 sm:text-black"
             >mobile.de</a
           >
         </div>
@@ -83,6 +83,7 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="google embet code"
+          alt="google map"
         ></iframe>
       </div>
     </div>

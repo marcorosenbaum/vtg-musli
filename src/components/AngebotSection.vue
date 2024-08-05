@@ -68,7 +68,7 @@
       <div class="bg-light-blue p-6 flex items-center gap-4 rounded-md">
         <img
           src="@/assets/images/erstklassiger-service.png"
-          alt="garantie icon"
+          alt="service icon"
           class="h-[3rem]"
         />
         <p>Erstklassiger Kundenservice</p>

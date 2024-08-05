@@ -10,14 +10,10 @@
       <div
         class="koho move-right text-white hover:text-light-orange duration-300 text-2xl flex flex-col items-center"
       >
-        <!-- <div
-                class="flex flex-col text-white hover:text-light-orange duration-300 text-4xl justify-center items-center"
-              > -->
         <p>unsere Fahrzeuge:</p>
         <p class="z-20 text-4xl">
           mobile<span class="text-light-orange">.</span>de
         </p>
-        <!-- </div> -->
       </div>
     </div>
   </a>
@@ -37,7 +33,7 @@
           class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
-        <h2 class="absolute top-[10%] left-[5%] text-white">
+        <h2 class="absolute top-[5%] left-[5%] text-white">
           Service,<br />der überzeugt.
         </h2>
       </div>
@@ -47,7 +43,7 @@
           class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
-        <h2 class="absolute top-[10%] right-[5%] text-white">
+        <h2 class="absolute top-[5%] right-[5%] text-white">
           Qualität für sichere Fahrten.
         </h2>
       </div>
@@ -57,7 +53,7 @@
           class="object-cover w-screen h-screen"
           alt="Photo VW T1"
         />
-        <h2 class="absolute bottom-[10%] left-[5%] text-white">
+        <h2 class="absolute bottom-[15%] left-[5%] text-white">
           Entspannt unterwegs.
         </h2>
       </div>
@@ -122,17 +118,4 @@ export default {
     transform: translateX(-400vw);
   }
 }
-
-/* .koho {
-  animation: change-color 0.5s infinite;
-  animation-delay: 20s;
-}
-@keyframes change-color {
-  0% {
-    color: #fff;
-  }
-  100% {
-    color: #004d78;
-  }
-} */
 </style>

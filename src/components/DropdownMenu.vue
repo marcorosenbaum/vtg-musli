@@ -10,7 +10,11 @@
           class="text-3xl mb-40 cursor-pointer hover:text-light-orange transform duration-300"
         >
           <div class="flex justify-end">
-            <img class="w-16" src="../assets/images/close-icon.png" />
+            <img
+              alt="close menu"
+              class="w-16"
+              src="../assets/images/close-icon.png"
+            />
           </div>
         </div>
         <a
@@ -18,9 +22,11 @@
           class="hover:text-light-orange transform duration-300"
           href="#angebot-section"
           ><div class="flex gap-4 items-center">
-            <img class="w-12" src="../assets/images/angebot-icon.png" /><span
-              >Angebot</span
-            >
+            <img
+              class="w-12"
+              alt="angebot-icon"
+              src="../assets/images/angebot-icon.png"
+            /><span>Angebot</span>
           </div></a
         >
       </div>
@@ -30,9 +36,11 @@
         class="hover:text-light-orange transform duration-300"
         href="#finanzierung-section"
         ><div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/finanzierung-icon.png" /><span
-            >Finanzierung & Garantie</span
-          >
+          <img
+            class="w-12"
+            alt="finanzierung"
+            src="../assets/images/finanzierung-icon.png"
+          /><span>Finanzierung & Garantie</span>
         </div></a
       >
       <a
@@ -40,9 +48,11 @@
         class="hover:text-light-orange transform duration-300"
         href="#about-section"
         ><div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/über-uns-icon.png" /><span
-            >Über Uns</span
-          >
+          <img
+            class="w-12"
+            src="../assets/images/über-uns-icon.png"
+            alt="about"
+          /><span>Über Uns</span>
         </div></a
       >
       <a
@@ -50,9 +60,11 @@
         class="hover:text-light-orange transform duration-300"
         href="#contact-section"
         ><div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/menü-phone-icon.png" /><span
-            >Kontakt</span
-          >
+          <img
+            class="w-12"
+            src="../assets/images/menü-phone-icon.png"
+            alt="contact"
+          /><span>Kontakt</span>
         </div></a
       >
       <a
@@ -61,9 +73,11 @@
         href="#review-section"
       >
         <div class="flex gap-4 items-center">
-          <img class="w-12" src="../assets/images/bewertung-icon.png" /><span
-            >Bewertung</span
-          >
+          <img
+            class="w-12"
+            src="../assets/images/bewertung-icon.png"
+            alt="bewertungen"
+          /><span>Bewertung</span>
         </div></a
       >
     </div>
